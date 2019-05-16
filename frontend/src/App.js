@@ -29,9 +29,9 @@ class App extends Component {
                 <header className="App-header">
                     <h1>Carlos Hernandez</h1>
                     {/*{*/}
-                        {/*art_pieces.map(artPiece => (*/}
-                            {/*<ArtPiece data={artPiece}/>*/}
-                        {/*))*/}
+                    {/*art_pieces.map(artPiece => (*/}
+                    {/*<ArtPiece data={artPiece}/>*/}
+                    {/*))*/}
                     {/*}*/}
                 </header>
             </div>
