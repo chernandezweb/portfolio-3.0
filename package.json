@@ -4,13 +4,13 @@
   "description": "In the project directory, you can run:",
   "main": "index.js",
   "scripts": {
-    "start": "node backend/index.js",
+    "start": "cd backend && node index.js",
     "backend-install": "npm install --prefix backend",
-    "frontend-install": "npm install --prefix frontend",
+    "frontend-install": "cd frontend && yarn && cd ..",
     "server": "nodemon ./backend/index.js",
     "frontend": "npm start --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "cd frontend && yarn && yarn run build",
+    "heroku-postbuild": "cd frontend && yarn && yarn run build && npm install --prefix backend",
     "git-sync-master": "git checkout develop && git pull origin develop && git push origin develop && git checkout master && git pull origin master && git merge --no-edit develop && git push origin master && git checkout develop"
 
   },
