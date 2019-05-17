@@ -1,13 +1,13 @@
-const express = require('express'),
-    app = express(),
-    bodyParser = require('body-parser'),
-    router = require('./router');
+const express = require('express');
+const path = require('path');
+const bodyParser = require('body-parser');
+const router = require('./router');
 
-const port = 4000;
+const app = express();
+
+const port = process.env.PORT || 5000;
 
 app.listen(port, () => console.log(`Backend listening on port ${port}!`));
-
-app.use(bodyParser.json());
 
 if(process.env.NODE_ENV === 'production') {
     app.use(express.static(path.join(__dirname, '../frontend/build')));
@@ -16,6 +16,16 @@ if(process.env.NODE_ENV === 'production') {
         res.sendfile(path.join(__dirname = '../frontend/build/index.html'));
     })
 }
+
+// The "catchall" handler: for any request that doesn't
+// match one above, send back React's index.html file.
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname+'../frontend/build/index.html'));
+});
+
+
+
+app.use(bodyParser.json());
 
 // Enable CORS from client-side
 app.use(function(req, res, next) {
