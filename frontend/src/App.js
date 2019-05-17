@@ -12,7 +12,7 @@ class App extends Component {
     }
 
     componentDidMount() {
-        axios.get('http://localhost:5000/api/projects').then(results => {
+        axios.get('/api/projects').then(results => {
             const { data } = results.data;
             this.setState({
                 projects: data
