@@ -20,11 +20,8 @@ app.listen(port, () => console.log(`Backend listening on port ${port}!`));
 
 app.use(express.static(path.join(__dirname, '../frontend/build')));
 
-// The "catchall" handler: for any request that doesn't
-// match one above, send back React's index.html file.
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname+'../frontend/build/index.html'));
-});
+
+
 
 app.use(bodyParser.json());
 
@@ -49,6 +46,12 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
+
+// The "catchall" handler: for any request that doesn't
+// match one above, send back React's index.html file.
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname+'../frontend/build/index.html'));
+});
 
 console.log('Magic happens on port ' + port);
 
