@@ -1,5 +1,5 @@
-const express = require('express'),
-      ProjectsController = require('./controllers/projects.js');
+const express = require('express');
+const ProjectsController = require('./controllers/projects.js');
       // AuthentificationController = require('./controllers/authentification');
 
 module.exports = function(app) {
