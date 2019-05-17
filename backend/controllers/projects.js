@@ -1,4 +1,4 @@
-var ArtPiece = require('../models/projects').ArtPiece;
+var Projects = require('../models/projects').Projects;
 var async = require('async');
 var errorBuilder = require('../utils/errorBuilder');
 
@@ -7,7 +7,7 @@ exports.getProjects = function(req,res,next){
         function(done){
             new Projects()
                 .fetchAll()
-                .then(function(artist){
+                .then(function(project_name){
                     done(null, project_name);
                 })
                 .catch(function(err){
