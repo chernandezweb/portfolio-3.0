@@ -4,9 +4,9 @@
   "description": "In the project directory, you can run:",
   "main": "index.js",
   "scripts": {
-    "frontend-install": "npm install --prefix frontend",
-    "backend-install": "npm install --prefix backend",
     "start": "node ./backend/index.js",
+    "backend-install": "npm install --prefix backend",
+    "frontend-install": "npm install --prefix frontend",
     "server": "nodemon ./backend/index.js",
     "frontend": "npm start --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
