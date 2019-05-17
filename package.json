@@ -10,7 +10,9 @@
     "server": "nodemon index.js --prefix backend",
     "frontend": "npm start --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend",
+    "git-sync-master": "git checkout develop && git pull origin develop && git push origin develop && git checkout master && git pull origin master && git merge --no-edit develop && git push origin master && git checkout develop"
+
   },
   "author": "",
   "license": "ISC",
