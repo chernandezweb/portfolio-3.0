@@ -16,6 +16,10 @@
   },
   "author": "",
   "license": "ISC",
+  "engines": {
+    "node": "10.15.3",
+    "yarn": "1.13.0"
+  },
   "dependencies": {
     "concurrently": "^4.1.0",
     "nodemon": "^1.19.0"
