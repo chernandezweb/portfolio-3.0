@@ -6,8 +6,8 @@
   "scripts": {
     "frontend-install": "npm install --prefix frontend",
     "backend-install": "npm install --prefix backend",
-    "start": "node index.js --prefix backend",
-    "server": "nodemon index.js --prefix backend",
+    "start": "node ./backend/index.js",
+    "server": "nodemon ./backend/index.js",
     "frontend": "npm start --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend",
