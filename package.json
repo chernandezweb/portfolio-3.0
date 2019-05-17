@@ -10,7 +10,7 @@
     "server": "nodemon ./backend/index.js",
     "frontend": "npm start --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "npm install --prefix backend && cd frontend && yarn && yarn run build && cd .. && ",
+    "heroku-postbuild": "cd backend && npm install && cd .. && cd frontend && yarn && yarn run build && cd .. && ",
     "git-sync-master": "git checkout develop && git pull origin develop && git push origin develop && git checkout master && git pull origin master && git merge --no-edit develop && git push origin master && git checkout develop"
 
   },
