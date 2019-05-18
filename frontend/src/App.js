@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import Project from './components/Project'
 // import logo from './logo.svg';
 import axios from 'axios';
 import './App.css';
+import {Container} from 'react-bootstrap'
 
 class App extends Component {
     constructor(props) {
@@ -12,7 +14,11 @@ class App extends Component {
     }
 
     componentDidMount() {
-        axios.get('/api/projects').then(results => {
+        let apiUrl = "/api/projects";
+        if(window.location.hostname === "localhost"){
+            apiUrl = "http://localhost:5000/api/projects"
+        }
+        axios.get(apiUrl).then(results => {
             const { data } = results.data;
             this.setState({
                 projects: data
@@ -30,12 +36,16 @@ class App extends Component {
             <div className="App">
                 <header className="App-header">
                     <h1>Carlos Hernandez</h1>
-                    {/*{*/}
-                    {/*art_pieces.map(artPiece => (*/}
-                    {/*<ArtPiece data={artPiece}/>*/}
-                    {/*))*/}
-                    {/*}*/}
                 </header>
+                <section>
+                    <Container>
+                        {
+                            projects.map(singleProject => (
+                                <Project key={singleProject.id} data={singleProject}/>
+                            ))
+                        }
+                    </Container>
+                </section>
             </div>
         );
     }

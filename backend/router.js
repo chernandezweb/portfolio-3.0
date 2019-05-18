@@ -4,10 +4,6 @@ const ProjectsController = require('./controllers/projects.js');
 
 module.exports = function(app) {
     const apiRoutes = express.Router();
-
     apiRoutes.get('/api/projects', ProjectsController.getProjects);
-    // apiRoutes.post('/artPiece', AuthentificationController.validAuthentificationMiddleWare , ArtPieceController.updateArtPiece);
-    // apiRoutes.post('/password', AuthentificationController.validAuthentification);
-
     app.use(apiRoutes);
 };
