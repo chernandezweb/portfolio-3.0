@@ -14,3 +14,33 @@
     height: 100%;
     object-fit: cover;
 }
+
+/********************************/
+.project-infos-col{
+    display: flex;
+    align-items: center;
+}
+.project-infos{
+    width: 100%;
+    background-color: #383d41;
+    color: #fff;
+    border-radius: 10px;
+}
+.name-cnt, .description-cnt, .technology-used{
+    padding: 15px 0;
+}
+.name-cnt{
+    border-bottom: 5px solid #49b995;
+}
+.project-name{
+    font-size: 25px;
+}
+
+.description-cnt{
+    min-height: 250px;
+}
+
+.technology-used{
+    border-top: 5px solid #49b995;
+}
+

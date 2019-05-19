@@ -1,12 +1,51 @@
 .App {
   text-align: center;
+  font-family: 'Hind Siliguri', sans-serif;
+  background-color: #282c34;
+}
+p{
+  margin: 0;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+/*******************************************************************/
+.bm-menu{
+  background-color: #383d41;
+  color: #fff;
 }
+
+.bm-burger-button{
+  position: fixed;
+  top: 25px;
+  left: 25px;
+  color: #fff;
+}
+.bm-icon{
+  font-size: 50px;
+}
+.bm-morph-shape{
+  fill: #383d41;
+}
+.open-menu{
+
+}
+.close-menu{
+  font-size: 30px;
+  color: #fff;
+}
+.menu-list{
+  list-style: none;
+  outline: none;
+  padding-top: 50px;
+}
+.menu-item{
+  padding: 10px 0;
+  font-size: 30px;
+}
+.menu-item:hover{
+  cursor: pointer;
+  color: #49b995;
+}
+/**********************************************************************/
 
 .App-header {
   background-color: #282c34;
@@ -18,16 +57,33 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.portfolio-title{
+  font-size: 50px;
+}
+.fa-chevron-circle-down{
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  font-size: 40px;
+  color: #49b995;
+  animation: arrow-pointing infinite 1.5s ease-in;
+}
+.fa-chevron-circle-down:hover{
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes arrow-pointing{
+  0% {
+    transform: translate(-50%,-70%);
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    transform: translate(-50%,-50%);
+  }
+  100% {
+    transform: translate(-50%,-70%);
   }
 }
+
+/*.project-section{*/
+  /*background-color: #49b995;*/
+/*}*/

@@ -1,6 +1,6 @@
 import React from 'react';
 import './project.css';
-import {Container, Row, Col} from 'react-bootstrap'
+import {Row, Col} from 'react-bootstrap'
 
 class Project extends React.Component{
     constructor(props) {
@@ -22,12 +22,17 @@ class Project extends React.Component{
                             {this.props.data.image ? ( <img className="picture" src={this.props.data.image} alt=""/>) : <p>no image</p>}
                         </div>
                     </Col>
-                    <Col>
-                        <div>
-                            <br></br>
-                            {this.props.data.projectName ? (<p className="project-name">Artiste: {this.props.data.projectName}</p>) : null}
-                            <br></br>
-                            {this.props.data.description ? (<p className="project-description">Artiste: {this.props.data.description}</p>) : null}
+                    <Col className="project-infos-col">
+                        <div className="project-infos">
+                            <div className="name-cnt">
+                                {this.props.data.projectName ? (<p className="project-name">{this.props.data.projectName}</p>) : null}
+                            </div>
+                            <div className="description-cnt">
+                                {this.props.data.description ? (<p className="project-description">{this.props.data.description}</p>) : null}
+                            </div>
+                            <div className="technology-used">
+                                <p><span>Technology used :</span></p>
+                            </div>
                         </div>
                     </Col>
                 </Row>
