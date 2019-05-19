@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Project from './components/Project'
 // import logo from './logo.svg';
 import axios from 'axios';
-import './App.css';
+import './App.scss';
 import {Container} from 'react-bootstrap'
 import scrollToComponent from 'react-scroll-to-component';
 import { elastic as Menu } from 'react-burger-menu'

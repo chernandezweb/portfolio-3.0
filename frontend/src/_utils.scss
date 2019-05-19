@@ -1,0 +1,28 @@
+// Layout Responsive
+$screen-xsm:                 576px;
+$screen-sm:                  768px;
+$screen-md:                  992px;
+$screen-lg:                  1200px;
+$screen-xl:                  1400px;
+
+$xs-device: "only screen and (max-width:#{$screen-xsm})";
+$sm-device: "only screen and (max-width:#{$screen-sm})";
+$md-device: "only screen and (max-width:#{$screen-md})";
+$lg-device: "only screen and (max-width:#{$screen-lg})";
+$xl-device: "only screen and (max-width:#{$screen-xl})";
+
+
+
+
+// Mixins
+@mixin transform($arguments...){
+  -webkit-transform: $arguments;
+  -moz-transform: $arguments;
+  -o-transform: $arguments;
+  -ms-transform: $arguments;
+  transform: $arguments;
+}
+
+@mixin translate($x:0, $y:0){
+  @include transform(translate($x, $y));
+}

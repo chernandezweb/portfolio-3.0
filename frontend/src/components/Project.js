@@ -1,5 +1,5 @@
 import React from 'react';
-import './project.css';
+import './project.scss';
 import {Row, Col} from 'react-bootstrap'
 
 class Project extends React.Component{
@@ -17,12 +17,12 @@ class Project extends React.Component{
         return (
             <div className="project-container">
                 <Row>
-                    <Col>
+                    <Col sm="12" md className="project-picture-col">
                         <div className="picture-container">
                             {this.props.data.image ? ( <img className="picture" src={this.props.data.image} alt=""/>) : <p>no image</p>}
                         </div>
                     </Col>
-                    <Col className="project-infos-col">
+                    <Col sm="12" md className="project-infos-col">
                         <div className="project-infos">
                             <div className="name-cnt">
                                 {this.props.data.projectName ? (<p className="project-name">{this.props.data.projectName}</p>) : null}
@@ -30,8 +30,8 @@ class Project extends React.Component{
                             <div className="description-cnt">
                                 {this.props.data.description ? (<p className="project-description">{this.props.data.description}</p>) : null}
                             </div>
-                            <div className="technology-used">
-                                <p><span>Technology used :</span></p>
+                            <div className="technology-used-cnt">
+                                <p className="technology-used"><span>Technology used : </span>{this.props.data.technologyUsed ? this.props.data.technologyUsed : null}</p>
                             </div>
                         </div>
                     </Col>
