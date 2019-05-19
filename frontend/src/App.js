@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Project from './components/Project'
+import Project from './components/project/Project'
+import Contact from './components/contact/Contact'
 // import logo from './logo.svg';
 import axios from 'axios';
 import './App.scss';
@@ -33,10 +34,13 @@ class App extends Component {
 
     }
 
-    scrollToProjects = () => {
-        this.setState({menuOpen: false});
+    scrollToSection(sectionRef){
+        if(this.state.menuOpen === true){
+            this.setState({menuOpen: false});
+        }
+
         setTimeout(() => {
-            scrollToComponent(this.projectSection, { offset: 0, align: 'top', duration: 500});
+            scrollToComponent(sectionRef, { offset: 0, align: 'top', duration: 500});
         },500);
 
     };
@@ -65,10 +69,10 @@ class App extends Component {
                         customCrossIcon={<i className="fas fa-times close-menu"> </i>}
                         width={ 250 }>
                         <ul className="menu-list">
-                            <li className="menu-item" onClick={this.scrollToProjects}>Home</li>
-                            <li className="menu-item" onClick={this.scrollToProjects}>About</li>
-                            <li className="menu-item" onClick={this.scrollToProjects}>Projects</li>
-                            <li className="menu-item" onClick={this.scrollToProjects}>Contact</li>
+                            {/*<li className="menu-item" onClick={this.scrollToSection(this.aboutSection)}>Home</li>*/}
+                            <li className="menu-item" onClick={() =>this.scrollToSection(this.aboutSection)}>About</li>
+                            <li className="menu-item" onClick={() =>this.scrollToSection(this.projectSection)}>Projects</li>
+                            <li className="menu-item" onClick={() =>this.scrollToSection(this.contactSection)}>Contact</li>
                         </ul>
                     </Menu>
 
@@ -78,13 +82,28 @@ class App extends Component {
                             <p className="portfolio-title">Hello my name is Carlos Hernandez <br/> I'm a Front-End Developper</p>
                             <i onClick={() => scrollToComponent(this.projectSection, { offset: 0, align: 'top', duration: 1500})} className="fas fa-chevron-circle-down"> </i>
                         </header>
+                        <section id="about" className="pb-5" ref={(section) => { this.aboutSection = section; }}>
+                            <Container>
+                                <h2>About</h2>
+                                <div>
+                                    <p>I am a front-end developer seeking progress and challenges</p>
+                                </div>
+                            </Container>
+                        </section>
                         <section id="projects" className="project-section" ref={(section) => { this.projectSection = section; }}>
                             <Container>
+                                <h2>Projects</h2>
                                 {
                                     projects.map(singleProject => (
                                         <Project key={singleProject.id} data={singleProject}/>
                                     ))
                                 }
+                            </Container>
+                        </section>
+                        <section id="contact" ref={(section) => { this.contactSection = section; }}>
+                            <Container>
+                                <h2>Contact</h2>
+                                <Contact />
                             </Container>
                         </section>
                     </main>
