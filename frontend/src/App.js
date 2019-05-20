@@ -102,6 +102,7 @@ class App extends Component {
                                 <div className="about-text">
                                     <p>I am a front-end developer always seeking challenges.</p>
                                     <p>I have a passion for creating dynamic, fast and responsive websites and applicaitons.</p>
+                                    <p>I speak French, English, and Spanish</p>
                                 </div>
                                 <hr/>
                                 <h2>Skill set</h2>

@@ -75,6 +75,9 @@ h2{
   .fa-chevron-circle-down{
     position: absolute;
     bottom: 30px;
+    @media #{$xs-device}{
+      bottom: 60px;
+    }
     left: 50%;
     font-size: 40px;
     color: #49b995;
