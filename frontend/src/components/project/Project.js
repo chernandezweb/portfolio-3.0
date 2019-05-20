@@ -17,10 +17,12 @@ class Project extends React.Component{
         return (
             <div className="project-container">
                 <Row>
-                    <Col sm="12" md className="project-picture-col">
-                        <div className="picture-container">
-                            {this.props.data.image ? ( <img className="picture" src={this.props.data.image} alt=""/>) : <p>no image</p>}
-                        </div>
+                    <Col sm="12" md className="project-picture-col d-flex align-items-sm-center">
+                        <a href={this.props.data.url} target="_blank" rel="external">
+                            <div className="picture-container">
+                                {this.props.data.image ? ( <img className="picture" src={this.props.data.image} alt=""/>) : <p>no image</p>}
+                            </div>
+                        </a>
                     </Col>
                     <Col sm="12" md className="project-infos-col">
                         <div className="project-infos">

@@ -94,7 +94,7 @@ class App extends Component {
                         <header className="App-header">
                             <h1 className="d-none">Carlos Hernandez</h1>
                             <p className="portfolio-title">Hello my name is Carlos Hernandez <br/> I'm a Front-End Developper</p>
-                            <i onClick={() => scrollToComponent(this.projectSection, { offset: 0, align: 'top', duration: 1500})} className="fas fa-chevron-circle-down"> </i>
+                            <i onClick={() => scrollToComponent(this.aboutSection, { offset: 0, align: 'top', duration: 1500})} className="fas fa-chevron-circle-down"> </i>
                         </header>
                         <section id="about" className="about-section pb-5 pt-5" ref={(section) => { this.aboutSection = section; }}>
                             <Container>
