@@ -4,7 +4,7 @@ import Contact from './components/contact/Contact'
 // import logo from './logo.svg';
 import axios from 'axios';
 import './App.scss';
-import {Container} from 'react-bootstrap'
+import {Container, Row, Col} from 'react-bootstrap'
 import scrollToComponent from 'react-scroll-to-component';
 import { elastic as Menu } from 'react-burger-menu'
 
@@ -53,6 +53,20 @@ class App extends Component {
     render() {
         const projects  = this.state.projects;
 
+
+        let skillSet = [
+            {skill:"Html", iconClass: "fab fa-html5"},
+            {skill:"Css", iconClass: "fab fa-css3-alt"},
+            {skill:"Sass", iconClass: "fab fa-sass"},
+            {skill:"Javascript", iconClass: "fab fa-js"},
+            {skill:"React", iconClass: "fab fa-react"},
+            {skill:"Angular", iconClass: "fab fa-angular"},
+            {skill:"Ionic", iconClass: "fas fa-code"},
+            {skill:"Node.js", iconClass: "fab fa-node"},
+            {skill:"Unity", iconClass: "fas fa-code"},
+            {skill:"Photoshop", iconClass: "fab fa-adobe"},
+            {skill:"Illustrator", iconClass: "fab fa-adobe"}];
+
         console.log(projects);
 
         return (
@@ -82,15 +96,33 @@ class App extends Component {
                             <p className="portfolio-title">Hello my name is Carlos Hernandez <br/> I'm a Front-End Developper</p>
                             <i onClick={() => scrollToComponent(this.projectSection, { offset: 0, align: 'top', duration: 1500})} className="fas fa-chevron-circle-down"> </i>
                         </header>
-                        <section id="about" className="pb-5" ref={(section) => { this.aboutSection = section; }}>
+                        <section id="about" className="about-section pb-5 pt-5" ref={(section) => { this.aboutSection = section; }}>
                             <Container>
                                 <h2>About</h2>
-                                <div>
-                                    <p>I am a front-end developer seeking progress and challenges</p>
+                                <div className="about-text">
+                                    <p>I am a front-end developer always seeking challenges.</p>
+                                    <p>I have a passion for creating dynamic, fast and responsive websites and applicaitons.</p>
+                                </div>
+                                <hr/>
+                                <h2>Skill set</h2>
+                                <div className="skill-set pt-1">
+                                    <Row className="skill-row justify-content-center">
+                                        {
+                                            skillSet.map(skill => (
+                                                <Col xs="6" md="4" lg="2" className="skill-col">
+                                                    <div className="skill">
+                                                        <i className={skill.iconClass}> </i>
+                                                        <p>{skill.skill}</p>
+                                                    </div>
+                                                </Col>
+
+                                            ))
+                                        }
+                                    </Row>
                                 </div>
                             </Container>
                         </section>
-                        <section id="projects" className="project-section" ref={(section) => { this.projectSection = section; }}>
+                        <section id="projects" className="project-section pb-5 pt-5" ref={(section) => { this.projectSection = section; }}>
                             <Container>
                                 <h2>Projects</h2>
                                 {
@@ -100,7 +132,7 @@ class App extends Component {
                                 }
                             </Container>
                         </section>
-                        <section id="contact" ref={(section) => { this.contactSection = section; }}>
+                        <section id="contact" className="contact-section pb-5 pt-5" ref={(section) => { this.contactSection = section; }}>
                             <Container>
                                 <h2>Contact</h2>
                                 <Contact />

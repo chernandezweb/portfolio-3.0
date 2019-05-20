@@ -1,4 +1,5 @@
 import React from 'react';
+import {Button, } from 'react-bootstrap'
 
 class Contact extends React.Component{
     constructor(props) {
@@ -12,7 +13,13 @@ class Contact extends React.Component{
     render() {
         return (
             <div >
-                <p>test contact</p>
+                <p>If you wanna get in touch with me, it will be my pleasure to answer any question or enquiries</p>
+                <br/>
+                <p>Email adress</p>
+                <br/>
+                <p>chernandezweb@gmail.com</p>
+                <br/>
+                <a href="/Carlos-Hernandez-CV.pdf"><Button>Download my Resume</Button></a>
             </div>
         )
     }

@@ -99,3 +99,38 @@ h2{
   }
 }
 
+
+
+.about-section, .contact-section{
+  background-color: #383d41;
+  h2{
+    margin-bottom: 20px;
+  }
+}
+
+.about-section{
+  .about-text{
+    p{
+      font-size: 20px;
+    }
+  }
+  hr{
+    border-color: #fff;
+    width: 50%;
+    margin: 50px auto;
+  }
+  .skill-set{
+
+    .skill{
+      color: #fff;
+      margin-bottom: 20px;
+      background-color: #282c34;
+      padding: 20px;
+      border-radius: 10px;
+      i{
+        font-size: 50px;
+      }
+    }
+  }
+}
+
