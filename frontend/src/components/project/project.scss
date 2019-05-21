@@ -5,7 +5,7 @@
 }
 
 .project-picture-col{
-  @media #{$sm-device}{
+  @media #{$md-device}{
     margin-bottom: 50px;
   }
   .picture-container{
@@ -49,10 +49,15 @@
 
     .description-cnt{
       min-height: 235px;
+      padding: 20px 30px;
+      @media #{$md-device}{
+        min-height: auto;
+      }
     }
 
     .technology-used-cnt{
       border-top: 5px solid #49b995;
+      padding: 15px 20px;
     }
   }
 }
