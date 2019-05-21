@@ -68,6 +68,7 @@ h2{
   position: relative;
   .portfolio-title{
     font-size: 50px;
+    z-index: 999;
     @media #{$xs-device}{
       font-size: 6vw;
     }
@@ -75,6 +76,7 @@ h2{
   .fa-chevron-circle-down{
     position: absolute;
     bottom: 30px;
+    z-index: 999;
     @media #{$xs-device}{
       bottom: 60px;
     }
@@ -85,6 +87,15 @@ h2{
     &:hover{
       cursor: pointer;
     }
+  }
+
+  .canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    @include  transform(-50%, -50%)
   }
 
 }
@@ -115,6 +126,16 @@ h2{
   .about-text{
     p{
       font-size: 20px;
+    }
+    .my-github{
+      i{
+        padding-top: 20px;
+        font-size: 50px;
+        color: #fff;
+        &:hover{
+          color: #49b995;
+        }
+      }
     }
   }
   hr{

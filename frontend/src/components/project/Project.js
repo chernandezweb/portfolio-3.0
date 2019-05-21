@@ -18,7 +18,7 @@ class Project extends React.Component{
             <div className="project-container">
                 <Row>
                     <Col md="12" lg className="project-picture-col d-flex align-items-sm-center">
-                        <a href={this.props.data.url} target="_blank" rel="external">
+                        <a href={this.props.data.url} target="_blank" rel="noopener noreferrer">
                             <div className="picture-container">
                                 {this.props.data.image ? ( <img className="picture" src={this.props.data.image} alt=""/>) : <p>no image</p>}
                             </div>

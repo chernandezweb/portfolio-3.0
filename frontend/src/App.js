@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Project from './components/project/Project'
 import Contact from './components/contact/Contact'
+import Canvas from './components/canvas/Canvas'
 // import logo from './logo.svg';
 import axios from 'axios';
 import './App.scss';
@@ -31,7 +32,6 @@ class App extends Component {
             console.log('Error fetching results ', err);
             throw new Error(err);
         });
-
     }
 
     scrollToSection(sectionRef){
@@ -92,6 +92,7 @@ class App extends Component {
 
                     <main id="page-wrap">
                         <header className="App-header">
+                            <Canvas />
                             <h1 className="d-none">Carlos Hernandez</h1>
                             <p className="portfolio-title">Hello my name is Carlos Hernandez <br/> I'm a Front-End Developper</p>
                             <i onClick={() => scrollToComponent(this.aboutSection, { offset: 0, align: 'top', duration: 1500})} className="fas fa-chevron-circle-down"> </i>
@@ -103,6 +104,11 @@ class App extends Component {
                                     <p>I am a front-end developer always seeking challenges.</p>
                                     <p>I have a passion for creating dynamic, fast and responsive websites and applicaitons.</p>
                                     <p>I speak French, English, and Spanish</p>
+                                    <br/>
+                                    <p>If you wana see the code of my portfolio and other personal projects click on the icon below to go to my github</p>
+                                    <a className="my-github" href="https://github.com/chernandezweb/portfolio-3.0" target="_blank" rel="noopener noreferrer">
+                                        <i className="fab fa-github"> </i>
+                                    </a>
                                 </div>
                                 <hr/>
                                 <h2>Skill set</h2>
@@ -110,7 +116,7 @@ class App extends Component {
                                     <Row className="skill-row justify-content-center">
                                         {
                                             skillSet.map(skill => (
-                                                <Col xs="6" md="4" lg="2" className="skill-col">
+                                                <Col xs="6" md="4" lg="2" className="skill-col" key={skill.skill}>
                                                     <div className="skill">
                                                         <i className={skill.iconClass}> </i>
                                                         <p>{skill.skill}</p>
