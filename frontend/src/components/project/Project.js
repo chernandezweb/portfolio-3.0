@@ -13,7 +13,6 @@ class Project extends React.Component{
 
 
     render() {
-        // const {editing} = this.state;
         return (
             <div className="project-container">
                 <Row>
@@ -30,7 +29,7 @@ class Project extends React.Component{
                                 {this.props.data.projectName ? (<p className="project-name">{this.props.data.projectName}</p>) : null}
                             </div>
                             <div className="description-cnt">
-                                {this.props.data.description ? (<p className="project-description">{this.props.data.description}</p>) : null}
+                                {this.props.data.description_Fr || this.props.data.description_En ? (<p className="project-description">{this.props.lang === "fr" ? this.props.data.description_Fr : this.props.data.description_En}</p>) : null}
                             </div>
                             <div className="technology-used-cnt">
                                 <p className="technology-used"><span>Technology used : </span>{this.props.data.technologyUsed ? this.props.data.technologyUsed : null}</p>
@@ -42,6 +41,5 @@ class Project extends React.Component{
         )
     }
 }
-
 
 export default Project;

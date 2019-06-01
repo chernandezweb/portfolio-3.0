@@ -8,3 +8,15 @@
 .email-title{
   font-size: 30px;
 }
+
+.linkedin{
+    i{
+      color: #fff;
+      margin: 20px auto;
+      border-radius: 10px;
+      font-size: 50px;
+      &:hover{
+        color: #49b995;
+      }
+    }
+}

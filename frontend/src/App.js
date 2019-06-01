@@ -14,7 +14,8 @@ class App extends Component {
         super(props);
         this.state = {
             projects: [],
-            menuOpen: false
+            menuOpen: false,
+            language: "fr"
         }
     }
 
@@ -47,6 +48,16 @@ class App extends Component {
 
     handleMenuStateChange (state) {
         this.setState({menuOpen: state.isOpen});
+    }
+
+    changeLanguage(){
+        if(this.state.language === "fr"){
+            this.setState({language: "en"})
+        }
+        if(this.state.language === "en"){
+            this.setState({language: "fr"})
+        }
+        console.log(this.state.language)
     }
 
 
@@ -84,9 +95,11 @@ class App extends Component {
                         width={ 250 }>
                         <ul className="menu-list">
                             {/*<li className="menu-item" onClick={this.scrollToSection(this.aboutSection)}>Home</li>*/}
-                            <li className="menu-item" onClick={() =>this.scrollToSection(this.aboutSection)}>About</li>
-                            <li className="menu-item" onClick={() =>this.scrollToSection(this.projectSection)}>Projects</li>
+                            <li className="menu-item" onClick={() =>this.scrollToSection(this.aboutSection)}>{this.state.language === "fr" ? "À propos" : "About" }</li>
+                            <li className="menu-item" onClick={() =>this.scrollToSection(this.projectSection)}>{this.state.language === "fr" ? "Projets" : "Projects" }</li>
                             <li className="menu-item" onClick={() =>this.scrollToSection(this.contactSection)}>Contact</li>
+                            <hr/>
+                            <li className="menu-item" onClick={() =>this.changeLanguage()}>{this.state.language === "fr" ? "en" : "fr" }</li>
                         </ul>
                     </Menu>
 
@@ -94,24 +107,49 @@ class App extends Component {
                         <header className="App-header">
                             <Canvas />
                             <h1 className="d-none">Carlos Hernandez</h1>
-                            <p className="portfolio-title">Hello my name is Carlos Hernandez <br/> I'm a Front-End Developper</p>
+                            {(this.state.language === "en") ? (
+                                <p className="portfolio-title">Hello my name is Carlos Hernandez <br/> I'm a Front-End Developper</p>
+                            ) : (
+                                <p className="portfolio-title">Salut! Mon nom est Carlos Hernandez <br/> et je suis un développeur Front-End</p>
+                            )}
                             <i onClick={() => scrollToComponent(this.aboutSection, { offset: 0, align: 'top', duration: 1500})} className="fas fa-chevron-circle-down"> </i>
                         </header>
                         <section id="about" className="about-section pb-5 pt-5" ref={(section) => { this.aboutSection = section; }}>
                             <Container>
-                                <h2>About</h2>
+                                {(this.state.language === "en") ? (
+                                    <h2>About</h2>
+                                ) : (
+                                    <h2>À propos</h2>
+                                )}
+
                                 <div className="about-text">
-                                    <p>I am a front-end developer always seeking challenges.</p>
-                                    <p>I have a passion for creating dynamic, fast and responsive websites and applicaitons.</p>
-                                    <p>I speak French, English, and Spanish</p>
-                                    <br/>
-                                    <p>If you wana see the code of my portfolio and other personal projects click on the icon below to go to my github</p>
+                                    {(this.state.language === "en") ? (
+                                        <div>
+                                            <p>I am a front-end developer always seeking challenges.</p>
+                                            <p>I have a passion for creating dynamic, fast and responsive websites and applicaitons.</p>
+                                            <p>I speak French, English, and Spanish</p>
+                                            <br/>
+                                            <p>If you want to see the code of my portfolio and other personal projects click on the icon below to go to my GitHub</p>
+                                        </div>
+                                    ) : (
+                                        <div>
+                                            <p>Je suis un développeur Front-End qui est toujours à la recherche de nouveaux défis</p>
+                                            <p>Je suis passioné sur la création  d'applications, de sites web et et de plateformes dynamique, rapide et responsive.</p>
+                                            <p>Je parle et écris le Français, l'Anglais et l'Espagnol.</p>
+                                            <br/>
+                                            <p>Si vous êtes interressés à jeter un coup d'oeil au code de mon portfolio ou d'autre projets personnels, n'hésitez pas à cliquer sur l'icône ci-dessous pour accéder à mon GitHub.</p>
+                                        </div>
+                                    )}
                                     <a className="my-github" href="https://github.com/chernandezweb/portfolio-3.0" target="_blank" rel="noopener noreferrer">
                                         <i className="fab fa-github"> </i>
                                     </a>
                                 </div>
                                 <hr/>
-                                <h2>Skill set</h2>
+                                {(this.state.language === "en") ? (
+                                    <h2>Skill set</h2>
+                                ) : (
+                                    <h2>Habiletés</h2>
+                                )}
                                 <div className="skill-set pt-1">
                                     <Row className="skill-row justify-content-center">
                                         {
@@ -131,10 +169,14 @@ class App extends Component {
                         </section>
                         <section id="projects" className="project-section pb-5 pt-5" ref={(section) => { this.projectSection = section; }}>
                             <Container>
-                                <h2>Projects</h2>
+                                {(this.state.language === "en") ? (
+                                    <h2>Projects</h2>
+                                ) : (
+                                    <h2>Projets</h2>
+                                )}
                                 {
                                     projects.map(singleProject => (
-                                        <Project key={singleProject.id} data={singleProject}/>
+                                        <Project key={singleProject.id} data={singleProject} lang={this.state.language}/>
                                     ))
                                 }
                             </Container>
@@ -142,7 +184,7 @@ class App extends Component {
                         <section id="contact" className="contact-section pb-5 pt-5" ref={(section) => { this.contactSection = section; }}>
                             <Container>
                                 <h2>Contact</h2>
-                                <Contact />
+                                <Contact lang={this.state.language} />
                             </Container>
                         </section>
                     </main>
