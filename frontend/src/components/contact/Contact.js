@@ -25,7 +25,10 @@ class Contact extends React.Component{
                 <p className="email-title">{this.props.lang === "en" ? "Email adress:" : "Adresse courriel:"}</p>
                 <p className="email">chernandezweb@gmail.com</p>
                 <br/>
-                <a href="/Carlos-Hernandez-CV.pdf" target="_blank"  rel="noopener noreferrer"><Button variant="secondary" size="lg">{this.props.lang === "en" ? "Download my Resume" : "Télécharger mon CV"}</Button></a>
+                <a href="/Carlos-Hernandez-CV-2019-FR.pdf" target="_blank"  rel="noopener noreferrer"><Button variant="secondary" size="lg">{this.props.lang === "en" ? "Download my Resume (FR)" : "Télécharger mon CV (FR)"}</Button></a>
+                <br/>
+                <br/>
+                <a href="/Carlos-Hernandez-CV-2019-EN.pdf" target="_blank"  rel="noopener noreferrer"><Button variant="secondary" size="lg">{this.props.lang === "en" ? "Download my Resume (EN)" : "Télécharger mon CV (EN)"}</Button></a>
                 <br/>
                 <a href="https://www.linkedin.com/in/carlos-hernandez-7a0177133/" target="_blank"  rel="noopener noreferrer" className="linkedin"><i className="fab fa-linkedin"></i></a>
             </div>
