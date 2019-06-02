@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6031ab0c-e120-46a6-9df9-c4c600d482f4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/Carlos-Hernandez-CV.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/contact/Contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/contact/Contact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,11 +14,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.6163765">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/frontend/src/App.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-986">
-                  <caret line="29" column="27" lean-forward="true" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
+                <state relative-caret-position="357">
+                  <caret line="114" column="63" lean-forward="true" selection-start-line="114" selection-start-column="63" selection-end-line="114" selection-end-column="63" />
                   <folding>
                     <element signature="e#0#41#0" expanded="true" />
                     <element signature="e#226#252#0" expanded="true" />
@@ -38,11 +36,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/frontend/src/components/contact/Contact.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="357">
-                  <caret line="30" column="201" selection-start-line="30" selection-start-column="201" selection-end-line="30" selection-end-column="201" />
+                <state relative-caret-position="646">
+                  <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -192,8 +190,8 @@
         <option value="$PROJECT_DIR$/frontend/src/components/project/Project.js" />
         <option value="$PROJECT_DIR$/frontend/package.json" />
         <option value="$PROJECT_DIR$/frontend/src/components/canvas/Canvas.js" />
-        <option value="$PROJECT_DIR$/frontend/src/App.js" />
         <option value="$PROJECT_DIR$/frontend/src/components/contact/Contact.js" />
+        <option value="$PROJECT_DIR$/frontend/src/App.js" />
       </list>
     </option>
   </component>
@@ -395,7 +393,7 @@
       <workItem from="1558482315754" duration="1715000" />
       <workItem from="1558796571706" duration="629000" />
       <workItem from="1559427132234" duration="4672000" />
-      <workItem from="1559500239788" duration="3879000" />
+      <workItem from="1559500239788" duration="4580000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1557966486182</created>
@@ -726,23 +724,30 @@
       <option name="project" value="LOCAL" />
       <updated>1559506177926</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Add new resume">
+      <created>1559508742375</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1559508742375</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78661000" />
+    <option name="totallyTimeSpent" value="79362000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8250401" visible="true" weight="0.17324094" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.60192615" visible="true" weight="0.17324094" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="2" sideWeight="0.17495987" side_tool="true" visible="true" weight="0.17324094" />
+      <window_info id="npm" order="2" sideWeight="0.39807382" side_tool="true" visible="true" weight="0.17324094" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32502708" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32502708" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -782,18 +787,8 @@
     <MESSAGE value="Add translation system - FR/EN" />
     <MESSAGE value="update axios version" />
     <MESSAGE value="remova canvas  + update tranlation for project + add browser language detection" />
-    <option name="LAST_COMMIT_MESSAGE" value="remova canvas  + update tranlation for project + add browser language detection" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/frontend/src/App.js</url>
-          <line>108</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Add new resume" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add new resume" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/portfolio/.gitignore" />
@@ -1029,23 +1024,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/App.js">
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/contact/Contact.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-986">
-          <caret line="29" column="27" lean-forward="true" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
+        <state relative-caret-position="646">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
-            <element signature="e#226#252#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/components/contact/Contact.js">
+    <entry file="file://$PROJECT_DIR$/frontend/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
-          <caret line="30" column="201" selection-start-line="30" selection-start-column="201" selection-end-line="30" selection-end-column="201" />
+          <caret line="114" column="63" lean-forward="true" selection-start-line="114" selection-start-column="63" selection-end-line="114" selection-end-column="63" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#226#252#0" expanded="true" />
           </folding>
         </state>
       </provider>
