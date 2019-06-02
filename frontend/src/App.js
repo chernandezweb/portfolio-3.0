@@ -8,6 +8,7 @@ import './App.scss';
 import {Container, Row, Col} from 'react-bootstrap'
 import scrollToComponent from 'react-scroll-to-component';
 import { elastic as Menu } from 'react-burger-menu'
+import detectBrowserLanguage from 'detect-browser-language'
 
 class App extends Component {
     constructor(props) {
@@ -33,6 +34,10 @@ class App extends Component {
             console.log('Error fetching results ', err);
             throw new Error(err);
         });
+
+        if(detectBrowserLanguage() !== "fr-FR" && detectBrowserLanguage() !== "fr-CA"){
+            this.setState({language: "en"})
+        }
     }
 
     scrollToSection(sectionRef){
