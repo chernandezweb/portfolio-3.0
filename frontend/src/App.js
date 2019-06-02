@@ -113,7 +113,7 @@ class App extends Component {
                             <Canvas />
                             <h1 className="d-none">Carlos Hernandez</h1>
                             {(this.state.language === "en") ? (
-                                <p className="portfolio-title">Hello my name is Carlos Hernandez <br/> I'm a Front-End Developper</p>
+                                <p className="portfolio-title">Hello my name is Carlos Hernandez <br/> I'm a Front-End Developer</p>
                             ) : (
                                 <p className="portfolio-title">Salut! Mon nom est Carlos Hernandez <br/> et je suis un développeur Front-End</p>
                             )}
