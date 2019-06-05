@@ -55,7 +55,6 @@ h2{
 }
 
 /**********************************************************************/
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -66,9 +65,25 @@ h2{
   font-size: calc(10px + 2vmin);
   color: white;
   position: relative;
+  background-image: url("./arnold-franisca.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  .layer-black{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(49,49,49,0.4);
+  }
   .portfolio-title{
-    font-size: 50px;
+    font-size: 40px;
     z-index: 999;
+    font-weight: bold;
+    span{
+      color: #49b995;
+      font-size: 50px;
+    }
     @media #{$xs-device}{
       font-size: 6vw;
     }

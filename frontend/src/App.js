@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
-import Project from './components/project/Project'
-import Contact from './components/contact/Contact'
-import Canvas from './components/canvas/Canvas'
+import Project from './components/project/Project';
+import Contact from './components/contact/Contact';
+import Canvas from './components/canvas/Canvas';
+import logo from './black-bg.jpg';
 // import logo from './logo.svg';
 import axios from 'axios';
 import './App.scss';
-import {Container, Row, Col} from 'react-bootstrap'
+import {Container, Row, Col} from 'react-bootstrap';
 import scrollToComponent from 'react-scroll-to-component';
-import { elastic as Menu } from 'react-burger-menu'
-import detectBrowserLanguage from 'detect-browser-language'
+import { elastic as Menu } from 'react-burger-menu';
+import detectBrowserLanguage from 'detect-browser-language';
+import { Tween, Timeline, SplitWords, SplitLetters, Controls } from 'react-gsap';
 
 class App extends Component {
     constructor(props) {
@@ -111,12 +113,19 @@ class App extends Component {
                     <main id="page-wrap">
                         <header className="App-header">
                             <Canvas />
+                            <div className="layer-black">
+
+                            </div>
                             <h1 className="d-none">Carlos Hernandez</h1>
-                            {(this.state.language === "en") ? (
-                                <p className="portfolio-title">Hello my name is Carlos Hernandez <br/> I'm a Front-End Developer</p>
-                            ) : (
-                                <p className="portfolio-title">Salut! Mon nom est Carlos Hernandez <br/> et je suis un développeur Front-End</p>
-                            )}
+                            <Tween
+                                css={{ opacity: 0, color: '#000' }}
+                                duration={5}>
+                                    {(this.state.language === "en") ? (
+                                        <p className="portfolio-title">Hello my name is <span>Carlos Hernandez</span> <br/> I'm a Front-End Developer</p>
+                                    ) : (
+                                        <p className="portfolio-title"><span className="fr-title-span">Carlos Hernandez</span> <br/>Développeur Front-End</p>
+                                    )}
+                            </Tween>
                             <i onClick={() => scrollToComponent(this.aboutSection, { offset: 0, align: 'top', duration: 1500})} className="fas fa-chevron-circle-down"> </i>
                         </header>
                         <section id="about" className="about-section pb-5 pt-5" ref={(section) => { this.aboutSection = section; }}>
