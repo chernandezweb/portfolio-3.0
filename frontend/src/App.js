@@ -2,15 +2,13 @@ import React, { Component } from 'react';
 import Project from './components/project/Project';
 import Contact from './components/contact/Contact';
 import Canvas from './components/canvas/Canvas';
-import logo from './black-bg.jpg';
-// import logo from './logo.svg';
 import axios from 'axios';
 import './App.scss';
-import {Container, Row, Col} from 'react-bootstrap';
+import {Container, Row, Col, Button} from 'react-bootstrap';
 import scrollToComponent from 'react-scroll-to-component';
 import { elastic as Menu } from 'react-burger-menu';
 import detectBrowserLanguage from 'detect-browser-language';
-import { Tween, Timeline, SplitWords, SplitLetters, Controls } from 'react-gsap';
+import { Tween} from 'react-gsap';
 
 class App extends Component {
     constructor(props) {
@@ -91,24 +89,30 @@ class App extends Component {
 
             <div className="App" >
                 <div id="outer-container">
-                    <Menu
-                        className="menu"
-                        isOpen={this.state.menuOpen}
-                        onStateChange={(state) => this.handleMenuStateChange(state)}
-                        pageWrapId={ "page-wrap" }
-                        outerContainerId={ "outer-container" }
-                        customBurgerIcon={<i className="fas fa-bars open-menu"> </i> }
-                        customCrossIcon={<i className="fas fa-times close-menu"> </i>}
-                        width={ 250 }>
-                        <ul className="menu-list">
-                            {/*<li className="menu-item" onClick={this.scrollToSection(this.aboutSection)}>Home</li>*/}
-                            <li className="menu-item" onClick={() =>this.scrollToSection(this.aboutSection)}>{this.state.language === "fr" ? "À propos" : "About" }</li>
-                            <li className="menu-item" onClick={() =>this.scrollToSection(this.projectSection)}>{this.state.language === "fr" ? "Projets" : "Projects" }</li>
-                            <li className="menu-item" onClick={() =>this.scrollToSection(this.contactSection)}>Contact</li>
-                            <hr/>
-                            <li className="menu-item" onClick={() =>this.changeLanguage()}>{this.state.language === "fr" ? "en" : "fr" }</li>
-                        </ul>
-                    </Menu>
+                    {
+                        (navigator.userAgent.indexOf('MSIE') !==-1 || navigator.appVersion.indexOf('Trident/') > -1) ?
+                            <Button className="langExplorer" variant="secondary" size="lg" onClick={() =>this.changeLanguage()}>{this.state.language === "fr" ? "en" : "fr" }</Button>
+                            :
+                            <Menu
+                                className="menu"
+                                isOpen={this.state.menuOpen}
+                                onStateChange={(state) => this.handleMenuStateChange(state)}
+                                pageWrapId={ "page-wrap" }
+                                outerContainerId={ "outer-container" }
+                                customBurgerIcon={<i className="fas fa-bars open-menu"> </i> }
+                                customCrossIcon={<i className="fas fa-times close-menu"> </i>}
+                                width={ 250 }>
+                                <ul className="menu-list">
+                                    {/*<li className="menu-item" onClick={this.scrollToSection(this.aboutSection)}>Home</li>*/}
+                                    <li className="menu-item" onClick={() =>this.scrollToSection(this.aboutSection)}>{this.state.language === "fr" ? "À propos" : "About" }</li>
+                                    <li className="menu-item" onClick={() =>this.scrollToSection(this.projectSection)}>{this.state.language === "fr" ? "Projets" : "Projects" }</li>
+                                    <li className="menu-item" onClick={() =>this.scrollToSection(this.contactSection)}>Contact</li>
+                                    <hr/>
+                                    <li className="menu-item" onClick={() =>this.changeLanguage()}>{this.state.language === "fr" ? "en" : "fr" }</li>
+                                </ul>
+                            </Menu>
+                    }
+
 
                     <main id="page-wrap">
                         <header className="App-header">
@@ -120,11 +124,11 @@ class App extends Component {
                             <Tween
                                 css={{ opacity: 0, color: '#000' }}
                                 duration={5}>
-                                    {(this.state.language === "en") ? (
-                                        <p className="portfolio-title">Hello my name is <span>Carlos Hernandez</span> <br/> I'm a Front-End Developer</p>
-                                    ) : (
-                                        <p className="portfolio-title"><span className="fr-title-span">Carlos Hernandez</span> <br/>Développeur Front-End</p>
-                                    )}
+                                {(this.state.language === "en") ? (
+                                    <p className="portfolio-title">Hello my name is <span>Carlos Hernandez</span> <br/> I'm a Front-End Developer</p>
+                                ) : (
+                                    <p className="portfolio-title"><span className="fr-title-span">Carlos Hernandez</span> <br/>Développeur Front-End</p>
+                                )}
                             </Tween>
                             <i onClick={() => scrollToComponent(this.aboutSection, { offset: 0, align: 'top', duration: 1500})} className="fas fa-chevron-circle-down"> </i>
                         </header>
