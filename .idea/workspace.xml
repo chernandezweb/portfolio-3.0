@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6031ab0c-e120-46a6-9df9-c4c600d482f4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/yarn.lock" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,8 +17,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/frontend/src/App.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="170">
-                  <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
+                <state relative-caret-position="442">
+                  <caret line="104" column="42" lean-forward="true" selection-start-line="104" selection-start-column="42" selection-end-line="104" selection-end-column="42" />
                   <folding>
                     <element signature="e#0#41#0" expanded="true" />
                   </folding>
@@ -42,8 +38,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/frontend/src/App.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="374">
-                  <caret line="28" column="16" lean-forward="true" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+                <state relative-caret-position="476">
+                  <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
                 </state>
               </provider>
             </entry>
@@ -78,11 +74,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/frontend/src/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
+                <state relative-caret-position="136">
                   <caret line="14" selection-start-line="14" selection-end-line="14" />
-                  <folding>
-                    <element signature="e#0#30#0" expanded="true" />
-                  </folding>
                 </state>
               </provider>
             </entry>
@@ -124,7 +117,7 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/frontend/src/components/project/Project.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="515">
+                <state relative-caret-position="697">
                   <caret line="41" column="5" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
@@ -250,14 +243,6 @@
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="portfolio-3.0" type="b2602c69:ProjectViewProjectNode" />
-              <item name="portfolio-3.0" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="contact" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -390,14 +375,8 @@
       <workItem from="1559500239788" duration="4772000" />
       <workItem from="1559688319349" duration="7447000" />
       <workItem from="1559864263140" duration="88000" />
-      <workItem from="1559942866561" duration="2452000" />
-    </task>
-    <task id="LOCAL-00006" summary="test post build">
-      <created>1558125094600</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1558125094600</updated>
+      <workItem from="1559942866561" duration="3298000" />
+      <workItem from="1559946836757" duration="260000" />
     </task>
     <task id="LOCAL-00007" summary="test post build">
       <created>1558125288396</created>
@@ -735,23 +714,29 @@
       <option name="project" value="LOCAL" />
       <updated>1559943534166</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="alternative language button instead of react-burger menu for IE11">
+      <created>1559945367546</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1559945367547</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89541000" />
+    <option name="totallyTimeSpent" value="90647000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.50136983" visible="true" weight="0.17324094" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5005417" visible="true" weight="0.17324094" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="2" sideWeight="0.49863014" side_tool="true" visible="true" weight="0.17324094" />
+      <window_info id="npm" order="2" sideWeight="0.49945828" side_tool="true" visible="true" weight="0.17324094" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.20910075" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.20910075" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -773,7 +758,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="First commit" />
     <MESSAGE value="First commit develop" />
     <MESSAGE value="Reformatting folder" />
     <MESSAGE value="test" />
@@ -798,7 +782,8 @@
     <MESSAGE value="new background image" />
     <MESSAGE value="fix background" />
     <MESSAGE value="add react-app-pollyfill" />
-    <option name="LAST_COMMIT_MESSAGE" value="add react-app-pollyfill" />
+    <MESSAGE value="alternative language button instead of react-burger menu for IE11" />
+    <option name="LAST_COMMIT_MESSAGE" value="alternative language button instead of react-burger menu for IE11" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/portfolio/.gitignore" />
@@ -979,10 +964,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/components/project/project.scss">
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/contact/Contact.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" column="39" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="39" />
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/App.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/_utils.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -995,11 +1001,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
+        <state relative-caret-position="136">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/project/project.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" column="39" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -1007,13 +1017,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/_utils.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
@@ -1027,31 +1030,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/components/contact/Contact.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/App.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="28" column="16" lean-forward="true" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
+        <state relative-caret-position="442">
+          <caret line="104" column="42" lean-forward="true" selection-start-line="104" selection-start-column="42" selection-end-line="104" selection-end-column="42" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
