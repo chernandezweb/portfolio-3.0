@@ -7,6 +7,7 @@
     "start": "cd backend && node index.js",
     "backend-install": "npm install --prefix backend",
     "frontend-install": "cd frontend && yarn && cd ..",
+    "frontend-build": "cd frontend && yarn run build && cd ..",
     "server": " cd backend && nodemon index.js && cd ..",
     "frontend": "cd frontend && yarn start && cd ..",
     "dev": "concurrently \"npm run server\" \"npm run frontend\"",
