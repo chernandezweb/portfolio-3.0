@@ -84,6 +84,7 @@ class App extends Component {
             {skill:"Illustrator", iconClass: "fab fa-adobe"}];
 
         console.log(projects);
+        console.log('build reset');
 
         return (
 
