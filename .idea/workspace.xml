@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6031ab0c-e120-46a6-9df9-c4c600d482f4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="6031ab0c-e120-46a6-9df9-c4c600d482f4" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,8 +60,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/frontend/public/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="522">
-                  <caret line="43" column="7" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
+                <state relative-caret-position="269">
+                  <caret line="44" selection-start-line="44" selection-end-line="44" />
                 </state>
               </provider>
             </entry>
@@ -386,21 +383,7 @@
       <workItem from="1560120629114" duration="1481000" />
       <workItem from="1560377743784" duration="620000" />
       <workItem from="1560640099379" duration="1855000" />
-      <workItem from="1560697239107" duration="847000" />
-    </task>
-    <task id="LOCAL-00011" summary="test post build">
-      <created>1558127632368</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1558127632368</updated>
-    </task>
-    <task id="LOCAL-00012" summary="test post build">
-      <created>1558127737424</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1558127737424</updated>
+      <workItem from="1560697239107" duration="1454000" />
     </task>
     <task id="LOCAL-00013" summary="test post build">
       <created>1558127913397</created>
@@ -731,29 +714,42 @@
       <option name="project" value="LOCAL" />
       <updated>1560120921695</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="remove useless commented code in index.html">
+      <created>1560700633783</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1560700633783</updated>
+    </task>
+    <task id="LOCAL-00061" summary="remove useless commented code in index.html">
+      <created>1560700861580</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1560700861580</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103088000" />
+    <option name="totallyTimeSpent" value="103695000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="391" y="84" width="1425" height="870" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.568521" visible="true" weight="0.1992674" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.32438016" visible="true" weight="0.1992674" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="2" sideWeight="0.43147898" side_tool="true" visible="true" weight="0.1992674" />
+      <window_info id="npm" order="2" sideWeight="0.67561984" side_tool="true" visible="true" weight="0.1992674" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3445287" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3432836" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.2383532" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.23744912" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.3163597" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
@@ -769,7 +765,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="test post build" />
     <MESSAGE value="Test entry database content(projects)" />
     <MESSAGE value="Change html title  + favicon" />
     <MESSAGE value="Add menu + update info component + update colors  + animations" />
@@ -794,7 +789,8 @@
     <MESSAGE value="optimize bg image" />
     <MESSAGE value="remove cdn unpkg bootstrap causing 404" />
     <MESSAGE value="remove useless commented code in backend" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove useless commented code in backend" />
+    <MESSAGE value="remove useless commented code in index.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove useless commented code in index.html" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/portfolio/.gitignore" />
@@ -1049,8 +1045,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="43" column="7" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
+        <state relative-caret-position="269">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
         </state>
       </provider>
     </entry>
