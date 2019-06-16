@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6031ab0c-e120-46a6-9df9-c4c600d482f4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/project/Project.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/project/Project.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,8 +38,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/frontend/src/components/project/Project.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="63">
-                  <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+                <state relative-caret-position="46">
+                  <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -74,7 +73,7 @@
             <entry file="file://$PROJECT_DIR$/frontend/src/components/project/Project.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="663">
-                  <caret line="41" column="5" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+                  <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -341,14 +340,7 @@
       <workItem from="1560120629114" duration="1481000" />
       <workItem from="1560377743784" duration="620000" />
       <workItem from="1560640099379" duration="1855000" />
-      <workItem from="1560697239107" duration="5324000" />
-    </task>
-    <task id="LOCAL-00024" summary="test post build">
-      <created>1558130859336</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1558130859336</updated>
+      <workItem from="1560697239107" duration="5931000" />
     </task>
     <task id="LOCAL-00025" summary="test post build">
       <created>1558131074826</created>
@@ -686,11 +678,18 @@
       <option name="project" value="LOCAL" />
       <updated>1560704807491</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="remove useless commented code in index.html">
+      <created>1560705241817</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1560705241817</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107565000" />
+    <option name="totallyTimeSpent" value="108172000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1688" y="18" width="1696" height="1026" extended-state="6" />
@@ -1001,8 +1000,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/components/project/Project.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+        <state relative-caret-position="46">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
