@@ -10,7 +10,7 @@
     "server": " cd backend && nodemon index.js && cd ..",
     "frontend": "cd frontend && yarn start && cd ..",
     "dev": "concurrently \"npm run server\" \"npm run frontend\"",
-    "codeship": "concurrently \"npm install\" \"npm run backend-install\" \"npm run frontend-install\" \"npm run heroku-postbuild\" \"npm start\"",
+    "codeship": "concurrently \"npm run backend-install\" \"npm run frontend-install\" \"npm run heroku-postbuild\" \"npm start\"",
     "heroku-postbuild": "cd frontend && yarn && yarn run build && cd ..",
     "git-sync-master": "git checkout develop && git pull origin develop && git push origin develop && git checkout master && git pull origin master && git merge --no-edit develop && git push origin master && git checkout develop"
 
