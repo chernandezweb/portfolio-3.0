@@ -5,9 +5,9 @@ const router = require('./router');
 
 const app = express();
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 3000;
 
-app.listen(port, () => console.log(`Backend listening on port ${port}!`));
+
 
 app.use(express.static(path.join(__dirname, '../frontend/build')));
 
@@ -22,7 +22,7 @@ app.use(function(req, res, next) {
     next();
 });
 
-router(app);
+// router(app);
 
 app.use(function(err, req, res, next) {
     console.log(err);
@@ -40,6 +40,8 @@ module.exports = app;
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname+'../frontend/build/index.html'));
 });
+
+app.listen(port, '127.0.0.1', () => console.log(`Backend listening on port ${port}!`));
 
 console.log('Magic happens on port ' + port);
 
