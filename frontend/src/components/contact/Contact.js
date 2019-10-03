@@ -13,6 +13,7 @@ class Contact extends React.Component{
 
     render() {
         return (
+
             <div className="contact-text">
                 {
                     this.props.lang === "en"
